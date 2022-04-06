@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float gravityModifier;
     public bool isOnGround = true;
     public bool gameOver = false;
+    public GameObject projectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);

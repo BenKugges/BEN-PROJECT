@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6382448, g: 0.88758785, b: 0.9159584, a: 1}
+  m_IndirectSpecularColor: {r: 0.63824207, g: 0.8875856, b: 0.9159561, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -740,6 +740,7 @@ MonoBehaviour:
   gravityModifier: 5
   isOnGround: 1
   gameOver: 0
+  projectilePrefab: {fileID: 8939127787635589306, guid: 0f9973eb08cbc574db956226019289f6, type: 3}
 --- !u!1001 &4078543976734884229
 PrefabInstance:
   m_ObjectHideFlags: 0
