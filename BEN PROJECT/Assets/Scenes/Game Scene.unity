@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213d806060658074fad7dd670e10f3f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 12.5
+  jumpForce: 11
   gravityModifier: 5
   isOnGround: 1
   gameOver: 0
@@ -572,6 +572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 929268271, guid: 9f94533bca99fe24ea55c344e1061e2b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2338584601851245487, guid: 9f94533bca99fe24ea55c344e1061e2b, type: 3}
       propertyPath: m_RootOrder
       value: 3
