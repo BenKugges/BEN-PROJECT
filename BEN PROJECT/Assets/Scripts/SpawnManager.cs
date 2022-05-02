@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    //This script controls the spawning of the obstacles and enemies//
+ 
     private PlayerController playerControllerScript;
     public GameObject[] enemyPrefabs;
     public int enemyIndex;
@@ -27,6 +29,11 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+
+    //This function occurs when the InvokeRepeating "SpawnObstacle" is active//
+    //This function causes either an obstacle or an animal to spawn randomly//
+    //This function also has the spawn position of the obstacles//
+    //return value - none//
     void SpawnObstacle ()
     {
         if (playerControllerScript.gameOver == false)
