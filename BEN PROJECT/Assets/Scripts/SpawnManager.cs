@@ -9,12 +9,13 @@ public class SpawnManager : MonoBehaviour
     public int enemyIndex;
     private float startDelay = 2;
     private float repeatRate = 2;
-
+    private Vector3 spawnPos = new Vector3(21, 0, 9);
     // Start is called before the first frame update
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
-      
+     
     }
 
     // Update is called once per frame

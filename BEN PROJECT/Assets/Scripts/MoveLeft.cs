@@ -8,6 +8,7 @@ public class MoveLeft : MonoBehaviour
     private PlayerController playerControllerScript;
     // Start is called before the first frame update
     void Start()
+        //Finds the object with the player controller script attached//
     {
         playerControllerScript =
         GameObject.Find("Player").GetComponent<PlayerController>();
@@ -15,6 +16,7 @@ public class MoveLeft : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+        //This checks if the game over state has been activated, if it hasn't it will make the move left script continue//
     {
         if (playerControllerScript.gameOver == false)
             transform.Translate(Vector3.left * Time.deltaTime * speed);

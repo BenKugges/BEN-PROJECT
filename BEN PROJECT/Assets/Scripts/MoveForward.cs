@@ -13,11 +13,11 @@ public class MoveForward : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+        //This script makes the asset with it applied to move forward//
     {
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
-       
-            
+          
+        
 
 
         

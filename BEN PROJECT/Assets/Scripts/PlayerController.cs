@@ -20,12 +20,14 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+        //This spawns a projectile when the key F is pressed//
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
 
+        //This checks if the player is on the ground and if they are, when space is pressed it will make the player jump//
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //This checks if the player is colliding with an object other than the ground if so, it will cause a game over//
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;

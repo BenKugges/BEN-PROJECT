@@ -16,6 +16,7 @@ public class DetectCollisions : MonoBehaviour
         
     }
 
+    //On a collision the asset with the script applied will be destroyed//
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
