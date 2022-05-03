@@ -5,6 +5,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     //This script controls the spawning of the obstacles and enemies//
+    //Private PlayerController playerControllerScript is used to find and detect the player//
+    //Public GameObject[] enemyPrefabs is all of the enemies that can be spawned//
+    //Private float startDelay controls how long after the game starts that the first enemy will be spawned//
+    //Private float repeatRate controls how often the obstacles will spawn//
+    //private Vector3 spawnpos controls where the obstacles will spawn//
  
     private PlayerController playerControllerScript;
     public GameObject[] enemyPrefabs;

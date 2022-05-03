@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
+    //Public float speed controls the speed at which objects with this script applied to it move at//
     public float speed = 20f;
     // Start is called before the first frame update
     void Start()

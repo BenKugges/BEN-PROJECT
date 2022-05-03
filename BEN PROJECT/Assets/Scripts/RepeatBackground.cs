@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RepeatBackground : MonoBehaviour
 {   //This script causes the background to repeat that is behind the player//
-    //
+    //Private Vector3 startPos records the starting position of the background//
+    //Private float repeatWidth records the width of the background//
     private Vector3 startPos;
     private float repeatWidth;
     // Start is called before the first frame update

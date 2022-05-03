@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
+    //Private float speed controls the speed of the background//
     private float speed = 8;
     private PlayerController playerControllerScript;
     // Start is called before the first frame update
