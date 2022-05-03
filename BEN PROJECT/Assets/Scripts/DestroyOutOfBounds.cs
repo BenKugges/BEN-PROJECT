@@ -19,6 +19,8 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Update()
         //This checks whether the asset with the script applied is within the boundaries, if the asset is not within the boundries it will be destroyed//
         //This script uses the private floats from above//
+        //Inputs - none//
+        //Outputs - none//
     {
         if (transform.position.x > topBound)
         {

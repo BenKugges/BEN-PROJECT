@@ -18,6 +18,8 @@ public class DetectCollisions : MonoBehaviour
 
     //This function occurs when a collision occurs//
     //This function causes the object with the script applied to it to be destroyed on a collision//
+    //return value - none//
+    //inputs - none//
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);

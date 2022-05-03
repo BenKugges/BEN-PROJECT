@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     void Update()
         //This spawns a projectile when the key F is pressed//
         //This projectile will move from the front of the character//
+        //Inputs - F key//
+        //Output - Spawns a projectile//
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
