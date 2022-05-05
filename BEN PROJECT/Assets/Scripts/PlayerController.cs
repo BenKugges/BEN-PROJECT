@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            
         }
 
         //This checks if the player is on the ground and if they are, when space is pressed it will make the player jump//
